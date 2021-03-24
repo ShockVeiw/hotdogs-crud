@@ -1,0 +1,32 @@
+.header {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 3px 3px 5px 6px #ccc;
+
+  &__container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 500px) {
+      width: 95%;
+    }
+  }
+  &__logo {
+    user-select: none;
+  }
+  &__icon {
+    margin-right: 10px;
+  }
+  &__button {
+    height: 40px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}

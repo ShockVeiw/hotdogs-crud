@@ -1,0 +1,18 @@
+.home-page {
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    width: 80%;
+  }
+  &__title {
+    margin-top: 20px;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1rem;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+}

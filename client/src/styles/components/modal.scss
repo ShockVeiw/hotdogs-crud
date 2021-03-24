@@ -1,0 +1,49 @@
+.modal {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform: scale(0);
+
+  &.active {
+    transform: scale(1);
+  }
+
+  &__content {
+    height: auto;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  &__container {
+    width: 90%;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  input {
+    height: 30px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  button {
+    height: 30px;
+    width: 50%;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+}
